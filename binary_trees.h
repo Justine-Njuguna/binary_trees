@@ -84,4 +84,6 @@ bool is_node_present(const binary_tree_t *tree, size_t index, size_t size);
 
 size_t binary_tree_size(const binary_tree_t *tree);
 
+binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree);
+
 #endif /* BINARY_TREES_H */
