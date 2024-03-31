@@ -23,6 +23,15 @@ typedef struct binary_tree_s
     struct binary_tree_s *right;
 } binary_tree_t;
 
+/* Binary Search Tree */
+typedef struct binary_tree_s bst_t;
+
+/* AVL Tree */
+typedef struct binary_tree_s avl_t;
+
+/* Max Binary Heap */
+typedef struct binary_tree_s heap_t;
+
 /* Function prototypes for all your binary tree functions go here */
 void binary_tree_print(const binary_tree_t *);
 
@@ -87,5 +96,10 @@ size_t binary_tree_size(const binary_tree_t *tree);
 binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree);
 
 binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree);
+
+/* TASKS INVOLVING BST */
+int binary_tree_is_bst(const binary_tree_t *tree);
+
+int binary_tree_is_bst_helper(const binary_tree_t *tree, long min_val, long max_val);
 
 #endif /* BINARY_TREES_H */
